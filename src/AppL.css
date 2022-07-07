@@ -1,0 +1,673 @@
+.light {
+  width: 100%;
+  height: auto;
+  max-width: 1700px;
+  background-color: white;
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+
+.light .burgMenu {
+  display: none;
+  width: 40%;
+  height: 100vh;
+  min-width: 150px;
+  min-height: 320px;
+  position: fixed;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.light .burgMenu a {
+  text-decoration: none;
+}
+
+.light .burgMenu .one {
+  margin-top: 70px;
+}
+
+.light .burgMenu .top {
+  margin-bottom: 20px;
+}
+
+.light .burgMenu div {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.light .burgMenu div:hover {
+  -webkit-animation: color 500ms forwards;
+          animation: color 500ms forwards;
+  color: white;
+}
+
+@-webkit-keyframes color {
+  from {
+    background-color: none;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+@keyframes color {
+  from {
+    background-color: none;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+.light .head {
+  z-index: 10;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  max-width: 1700px;
+  background-color: #fffcf8;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.light .header {
+  z-index: 10;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  max-width: 1700px;
+  background-color: white;
+}
+
+.light .header .burg {
+  display: none;
+  color: black;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    top: -70px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    top: -70px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.light .header .logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 95px;
+  height: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.light .header .logo img {
+  width: 95px;
+  height: 60px;
+  -webkit-animation: whirling 6s linear infinite;
+          animation: whirling 6s linear infinite;
+  cursor: pointer;
+}
+
+.light .header .nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 85%;
+  height: 70px;
+  margin-left: 4%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: top;
+}
+
+.light .header .nav .elem, .light .header .nav .lang, .light .header .nav .topic {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: auto;
+  vertical-align: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: black;
+  border-radius: 3%;
+  letter-spacing: 1px;
+  padding-left: 1%;
+  padding-right: 1%;
+  border: solid 1px white;
+}
+
+.light .header .nav .elem p, .light .header .nav .lang p, .light .header .nav .topic p {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.light .header .nav .lang {
+  margin-left: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+}
+
+.light .header .nav .lang img {
+  width: 25px;
+  height: 15px;
+}
+
+.light .header .elem:hover, .light .header .nav .lang:hover, .light .header .nav .topic:hover {
+  border: solid 1px black;
+}
+
+.light .header .elem:focus, .light .header .nav .lang:focus, .light .header .nav .topic:focus {
+  border: solid 1px black;
+}
+
+.light .header .lang:hover {
+  border: solid 1px black;
+}
+
+.light .header .logImg:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes whirling {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes whirling {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.light .main, .light .mainTwo, .light .mainFour, .light .mainThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 700px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5%;
+  background-color: #a2dcee;
+  scroll-behavior: smooth;
+}
+
+.light .main ul, .light .mainTwo ul, .light .mainFour ul, .light .mainThree ul {
+  list-style-type: none;
+}
+
+.light .main .text, .light .mainTwo .text, .light .mainFour .text, .light .mainThree .text {
+  width: 50%;
+  height: 40%;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.light .main .text ul, .light .mainTwo .text ul, .light .mainFour .text ul, .light .mainThree .text ul {
+  margin-left: 5%;
+}
+
+.light .main .pic, .light .mainTwo .pic, .light .mainFour .pic, .light .mainThree .pic {
+  width: 30%;
+  height: 40%;
+  color: black;
+  font-size: 30px;
+}
+
+.light .mainTwo, .light .mainFour {
+  margin-top: 0;
+  background-color: #7ba4d1;
+}
+
+.light .mainTwo .text, .light .mainFour .text {
+  color: #E0FFFF;
+}
+
+.light .mainTwo .pic img, .light .mainFour .pic img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-width: 200px;
+  max-height: 250px;
+}
+
+.light .mainThree {
+  background-color: #E0FFFF;
+}
+
+.light .mainThree .containerCalc div {
+  border-color: black;
+}
+
+.light .mainThree ul {
+  list-style-type: none;
+}
+
+.light .mainThree ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.light .mainFour {
+  background-color: #a2dcee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 610px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.light .mainFour .buttonLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.light .mainFour .buttonRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.light .mainFour .buttonLeft:hover {
+  background-color: #7378ff;
+  color: white;
+}
+
+.light .mainFour .buttonRight:hover {
+  background-color: #7378ff;
+  color: white;
+}
+
+.light .mainFour .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 610px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.light .mainFour .text div {
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  font-size: calc(80%);
+}
+
+.light .mainFour .text .itemOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 100%;
+  height: 610px;
+}
+
+.light .mainFour .text .itemTwo {
+  min-width: 100%;
+  height: 100%;
+}
+
+.light .mainFour .text .itemThree {
+  min-width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.light .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  color: black;
+  padding-bottom: 30px;
+}
+
+.light .footer a {
+  color: black;
+}
+
+.light .footer .infoOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 30%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.light .footer .infoOne div {
+  display: block;
+  width: 45%;
+  height: 100%;
+  text-align: right;
+  font-size: 25px;
+}
+
+.light .footer .infoOne .footTextOne {
+  text-align: left;
+}
+
+.light .footer .infoTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 30%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.light .over {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 17px;
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+  .light {
+    overflow: hidden;
+  }
+  .light .burgMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .light .burgMenu div {
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .light .burgMenu div span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+  }
+  .light .burgMenu div span img {
+    width: 25px;
+    height: 15px;
+  }
+  .light .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .light .header .nav {
+    display: none;
+  }
+  .light .header .burg {
+    display: block;
+    width: 95px;
+    height: 70px;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .light .main, .light .mainTwo, .light .mainFour, .light .mainThree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding-bottom: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .light .main .text, .light .mainTwo .text, .light .mainFour .text, .light .mainThree .text {
+    margin-top: 100px;
+    width: 90%;
+    height: auto;
+  }
+  .light .main .pic, .light .mainTwo .pic, .light .mainFour .pic, .light .mainThree .pic {
+    margin-top: 50px;
+    width: 90%;
+    height: auto;
+  }
+  .light .mainTwo .pic, .light .mainFour .pic {
+    text-align: center;
+  }
+  .light .mainTwo .pic img, .light .mainFour .pic img {
+    width: 40%;
+    aspect-ratio: 1;
+  }
+  .light .mainThree {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .light .mainThree .text ul li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .light .mainThree .pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60%;
+  }
+  .light .mainFour {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 500px;
+  }
+  .light .mainFour .text {
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .light .mainFour .text .itemOne {
+    height: 450px;
+  }
+  .light .footer {
+    gap: 40px;
+  }
+  .light .footer .infoOne {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  .light .footer .infoOne .footTextOne {
+    width: 100%;
+    text-align: center;
+  }
+  .light .footer .infoOne div {
+    width: 100%;
+    text-align: center;
+  }
+  .light .footer .infoTwo {
+    width: 90%;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .light .burgMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .light .burgMenu div {
+    height: 35px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .light .mainFour .text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=AppL.css.map */

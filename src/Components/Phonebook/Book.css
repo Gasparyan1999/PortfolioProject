@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.personMain {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  border: solid 5px #070152;
+  background-color: #b9e4ff;
+  color: black;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 100px;
+}
+
+.personMain .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  border: solid 1px black;
+  background-color: #b9e4ff;
+  color: black;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.personMain .person h3 {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.personMain .person button {
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.personMain .person div {
+  display: block;
+  width: 22%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.personAdd {
+  display: block;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.personAdd input {
+  width: 100%;
+  display: block;
+  margin-top: 12px;
+}
+
+.personAdd button {
+  width: 40%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .personMain {
+    margin-top: 0;
+  }
+  .personMain .person {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+  }
+  .personMain .person div {
+    width: 100%;
+    border-bottom: solid 1px black;
+    text-align: center;
+  }
+  .personMain .person div h3 {
+    font-size: 15px;
+  }
+  .personMain .person div span {
+    font-size: 12px;
+  }
+  .personAdd {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=Book.css.map */

@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.taskMain {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #ffef;
+  margin-top: 120px;
+}
+
+.taskMain .taskAdd {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 2px black;
+  background-color: #243B67;
+}
+
+.taskMain .taskAdd form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.taskMain .taskAdd form input {
+  height: 25px;
+}
+
+.taskMain .taskAdd form .title {
+  width: 40%;
+}
+
+.taskMain .taskAdd form .body {
+  width: 40%;
+}
+
+.taskMain .taskAdd form .taskLable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  letter-spacing: 2px;
+}
+
+.taskMain .taskAdd form .buttonAdd {
+  width: 20%;
+  height: 20%;
+  border-radius: 6%;
+  font-size: calc(110%);
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background-color: #C27DFC;
+}
+
+.taskMain .taskAdd form .buttonAdd:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.taskMain .elementMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 360px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #6E5DCF;
+  font-size: calc(150%);
+}
+
+.taskMain .elementMain button {
+  margin-top: 5px;
+  background-color: #C27DFC;
+  height: auto;
+  width: auto;
+  font-size: 18px;
+}
+
+.taskMain .elementMain .todo {
+  width: 30%;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.taskMain .elementMain .todo .todoElem {
+  margin-top: 3px;
+}
+
+.taskMain .elementMain .todo::-webkit-scrollbar, .taskMain .elementMain .doing::-webkit-scrollbar, .taskMain .elementMain .done::-webkit-scrollbar {
+  width: 10px;
+}
+
+.taskMain .elementMain .todo::-webkit-scrollbar-track, .taskMain .elementMain .doing::-webkit-scrollbar-track, .taskMain .elementMain .done::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.taskMain .elementMain .todo::-webkit-scrollbar-thumb, .taskMain .elementMain .doing::-webkit-scrollbar-thumb, .taskMain .elementMain .done::-webkit-scrollbar-thumb {
+  background: #C27DFC;
+  border-radius: 10px;
+}
+
+.taskMain .elementMain .doing {
+  width: 30%;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.taskMain .elementMain .done {
+  width: 30%;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.taskMain .elementMain .name {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.taskMain .elementMain .todoElem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5%;
+  border: solid 2px black;
+  letter-spacing: 2px;
+}
+
+.taskMain .elementMain .todoElem h4 {
+  font-size: 17px;
+}
+
+.taskMain .elementMain .todoElem h2 {
+  font-size: 20px;
+}
+
+.taskMain .elementMain .todoElem h3 {
+  font-size: 17px;
+}
+
+.taskMain .elementMain .todoElem div {
+  word-wrap: break-word;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.taskMain .elementMain .todoElem div button {
+  width: auto;
+  height: auto;
+}
+
+.taskMain .elementMain .todoElem .num {
+  text-align: left;
+}
+
+.taskMain .elementMain .todoElem .todoIcon {
+  letter-spacing: 20px;
+}
+
+.taskMain .elementMain .todoElem .todoTitle {
+  border: solid 1px black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .taskMain {
+    margin-top: 0;
+  }
+  .taskMain .elementMain {
+    height: 200px;
+  }
+  .taskMain .todo {
+    height: 200px;
+  }
+  .taskMain .doing {
+    height: 200px;
+  }
+  .taskMain .done {
+    height: 200px;
+  }
+  .taskMain .taskAdd span {
+    font-size: 10px;
+  }
+  .taskMain .taskAdd form .buttonAdd {
+    font-size: 15px;
+  }
+  .taskMain .taskAdd form .taskLable {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .taskMain .todoElem h4 {
+    font-size: 25px;
+  }
+  .taskMain .todoElem h2 {
+    font-size: 13px;
+  }
+  .taskMain .todoElem h3 {
+    font-size: 13px;
+  }
+  .taskMain .todoElem button {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body .taskMain {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    color: #ffef;
+    margin-top: 0px;
+  }
+  body .taskMain .taskAdd {
+    width: 100%;
+    height: auto;
+  }
+  body .taskMain .taskAdd form {
+    width: 100%;
+    gap: 5px;
+  }
+  body .taskMain .elementMain {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Task.css.map */
