@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.personMain{
+    display: block;
+    width: 70%;
+    height:auto;
+    margin: 0 auto;
+    border: solid 5px rgb(7, 1, 82);
+    background-color: rgb(185, 228, 255);
+    color: black;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 100px;
+    .person{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border: solid 1px black;
+        background-color: rgb(185, 228, 255);
+        color: black;
+        justify-content: space-around;
+        h3{
+            display: inline-block;
+            margin-right: 5px;
+        }
+        button{
+            cursor: pointer;
+            margin-left: 15px;
+        }
+        div{
+            display: block;
+            width: 22%;
+            text-align: left;
+            word-wrap: break-word;
+        }
+    }
+}
+.personAdd{
+    display: block;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    input{
+        width: 100%;
+        display: block;
+        margin-top: 12px;
+    }
+    button{
+        width: 40%;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .personMain{
+    margin-top: 0;
+        .person{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+
+            div{
+                width: 100%;
+                // min-width: 180px;
+                border-bottom: solid 1px black;
+                text-align: center;
+                h3{
+                    font-size: 15px;
+
+                }
+
+                span{
+                font-size: 12px;
+                }
+            }
+
+        }
+    }
+    .personAdd{
+        width: 70%;
+    }
+}

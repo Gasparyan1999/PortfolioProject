@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.taskMain{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #ffef;
+    margin-top: 120px;
+    .taskAdd{
+        width: 100%;
+        height: auto;
+        border-bottom: solid 2px black;
+        background-color: #243B67;
+        form{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            input{
+                height: 25px;
+            }
+        .title{
+            width: 40%;
+        }
+        .body{
+            width: 40%;
+        }
+        .taskLable{
+            display: flex;
+            width: 40%;
+            height: auto;
+            justify-content: space-around;
+            letter-spacing: 2px;
+        }
+        .buttonAdd{
+            width: 20%;
+            height: 20%;
+            border-radius: 6%;
+            font-size: calc(110%);
+            letter-spacing:1px;
+            border-radius: 10px;
+            background-color: #C27DFC;
+            &:active{
+                transform: scale(1.05);
+            }
+        }
+    }
+    }
+    .elementMain{
+        display: flex;
+        width: 100%;
+        height: 360px;
+        justify-content: space-around;
+        background-color: #6E5DCF;
+        font-size: calc(150%);
+        button{
+            margin-top: 5px;
+            background-color: #C27DFC;
+            height: auto;
+            width: auto;
+            font-size: 18px;
+        }
+        .todo{
+            width: 30%;
+            max-height: 360px;
+            overflow-y:auto;
+            .todoElem{
+                margin-top: 3px;
+            }
+        }
+        .todo::-webkit-scrollbar,.doing::-webkit-scrollbar,.done::-webkit-scrollbar {
+            width: 10px;
+          }
+          .todo::-webkit-scrollbar-track,.doing::-webkit-scrollbar-track,.done::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+          }
+           
+          .todo::-webkit-scrollbar-thumb,.doing::-webkit-scrollbar-thumb,.done::-webkit-scrollbar-thumb {
+            background: #C27DFC; 
+            border-radius: 10px;
+          }
+
+        .doing{
+            width: 30%;
+            max-height: 360px;
+            overflow-y:auto;
+        }
+        .done{
+            width: 30%;
+            max-height: 360px;
+            overflow-y:auto;
+        }
+        .name{
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+       .todoElem{
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        gap: 5%;
+        border: solid 2px black;
+        letter-spacing: 2px;
+        h4{
+            font-size: 17px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 17px;
+        }
+        div{
+            word-wrap: break-word;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            button{
+                    width:auto;
+                    height: auto;
+            }
+        }
+        .num{
+            text-align: left;
+        }
+        .todoIcon{
+                letter-spacing: 20px;
+        }
+        .todoTitle{
+            border:solid 1px black
+        }
+       }
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .taskMain{
+        margin-top: 0;
+       .elementMain{
+        height: 200px;
+       }
+        .todo{
+            height: 200px;
+         }
+         .doing{
+            height: 200px;
+         }
+         .done{
+            height: 200px;
+         }
+        .taskAdd{
+            span{
+                font-size: 10px;
+            }
+            form{
+            .buttonAdd{
+                font-size: 15px;
+            }
+            .taskLable{
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        }
+       .todoElem{
+       
+        h4{
+            font-size: 25px;
+        }
+        h2{
+            font-size: 13px;
+        }
+        h3{
+            font-size: 13px;
+        }
+        button{
+            font-size: 13px;
+        }
+       }
+    }
+}
+
+@media only screen and (max-width:450px){
+    body{
+        .taskMain{
+            display: block;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            color: #ffef;
+            margin-top: 0px;
+            .taskAdd{
+                width: 100%;
+                height: auto;
+                form{
+                    width: 100%;
+                    gap: 5px;
+
+                }
+            }
+            .elementMain{
+                width: 100%;
+            }
+        }
+    }
+}
+
